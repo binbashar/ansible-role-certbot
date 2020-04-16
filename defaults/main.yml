@@ -1,0 +1,12 @@
+# Certbot certificates domains and emails
+certbot_certs: []
+# - domain: example1.com
+#   email: email@example1.com
+# - example2.com
+#   email: email@example2.com
+
+# Certbot directories
+certbot_base_dir: /opt/certbot
+certbot_config_dir: "{{ certbot_base_dir }}"
+certbot_work_dir: "{{ certbot_base_dir }}"
+certbot_logs_dir: "{{ certbot_base_dir }}"

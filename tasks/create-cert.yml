@@ -1,0 +1,20 @@
+---
+- name: Check if certificate already exists.
+  stat:
+    path: /opt/certbot/live/{{ item.domain }}/cert.pem
+  register: certificate_file
+
+- name: Generate new certificate if one doesn't exist.
+  command: |
+    certbot certonly \
+      --domains {{ item.domain }} \
+      --email {{ item.email }} \
+      --config-dir {{ certbot_config_dir }} \
+      --work-dir {{ certbot_work_dir }} \
+      --logs-dir {{ certbot_logs_dir }} \
+      --non-interactive \
+      --agree-tos \
+      --dns-route53 \
+      --preferred-challenges dns-01 \
+      --dns-route53-propagation-seconds 30
+  when: not certificate_file.stat.exists

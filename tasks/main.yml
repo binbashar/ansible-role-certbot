@@ -1,0 +1,7 @@
+---
+- import_tasks: install.yml
+
+- include_tasks: create-cert.yml
+  with_items: "{{ certbot_certs }}"
+
+- import_tasks: configure-renewals.yml

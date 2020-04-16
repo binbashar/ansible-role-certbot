@@ -1,0 +1,16 @@
+---
+#
+# NOTE: the renewal-hooks should be created by certbot after the first run
+#
+- name: Check if post renewals dir already exists.
+  stat:
+    path: "{{ certbot_base_dir }}/renewal-hooks/post"
+  register: certificate_dir
+
+- name: Set up post renewal hooks
+  template:
+    src: restart-nginx.sh.j2
+    dest: "{{ certbot_base_dir }}/renewal-hooks/post/restart-nginx.sh"
+    mode: 0755
+    owner: root
+  when: certificate_dir.stat.exists
