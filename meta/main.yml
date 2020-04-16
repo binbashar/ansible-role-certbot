@@ -1,0 +1,26 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: binbash_inc
+  description: "Installs and configures Certbot."
+  company: "BinBash Inc"
+  license: "license (MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - networking
+    - system
+    - web
+    - certbot
+    - letsencrypt
+    - encryption
+    - certificates
+    - ssl
+    - https
