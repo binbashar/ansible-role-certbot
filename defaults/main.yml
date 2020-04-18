@@ -10,3 +10,6 @@ certbot_base_dir: /opt/certbot
 certbot_config_dir: "{{ certbot_base_dir }}"
 certbot_work_dir: "{{ certbot_base_dir }}"
 certbot_logs_dir: "{{ certbot_base_dir }}"
+
+# Custom environment variables to set when running certbot
+certbot_environment_vars: {}

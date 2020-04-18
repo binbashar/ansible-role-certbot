@@ -17,4 +17,5 @@
       --dns-route53 \
       --preferred-challenges dns-01 \
       --dns-route53-propagation-seconds 30
+  environment: "{{ certbot_environment_vars }}"
   when: not certificate_file.stat.exists
