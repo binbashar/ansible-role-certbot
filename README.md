@@ -60,6 +60,4 @@ Installs and configures Certbot for generating Let's Encrypt certificates.
 
 - [**pipeline-job**](https://app.circleci.com/pipelines/github/binbashar/ansible-role-certbot) (**NOTE:** Will only run after merged PR)
 - [**releases**](https://github.com/binbashar/ansible-role-certbot/releases) 
-- [**changelog**](https://github.com/binbashar/ansible-role-certbot/blob/master/CHANGELOG.md) 
-
-
+- [**changelog**](https://github.com/binbashar/ansible-role-certbot/blob/master/CHANGELOG.md)
