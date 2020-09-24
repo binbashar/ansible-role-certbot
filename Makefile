@@ -3,6 +3,17 @@ SHELL         := /bin/bash
 MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
 
+ANSIBLE_GALAXY_ROLE_NAME := binbash_inc.ansible_role_cerbot
+ANSIBLE_REPO_ROLE_NAME   := ansible-role-cerbot
+
+define OS_VER_LIST
+"ubuntu1804" \
+"ubuntu1604" \
+"debian10" \
+"debian9" \
+"debian8"
+endef
+
 help:
 	@echo 'Available Commands:'
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf " - \033[36m%-18s\033[0m %s\n", $$1, $$2}'
@@ -23,3 +34,4 @@ init-makefiles: ## initialize makefiles
 #
 #include ${MAKEFILES_DIR}/circleci/circleci.mk
 #include ${MAKEFILES_DIR}/release-mgmt/release.mk
+#include ${MAKEFILES_DIR}/ansible/ansible-roles.mk

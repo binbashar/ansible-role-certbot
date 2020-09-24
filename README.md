@@ -1,14 +1,4 @@
-<div align="center">
-    <img src="./%40doc/figures/binbash-logo.png" 
-    alt="binbash" width="250"/>
-</div>
-<div align="right">
-  <img src="./%40doc/figures/binbash-leverage-ansible-logo.png"
-  alt="leverage" width="130"/>
-</div>
-
 # Ansible Role: Binbash Certbot
-
 Installs and configures Certbot for generating Let's Encrypt certificates.
 
 ## IMPORTANT
@@ -51,12 +41,12 @@ Installs and configures Certbot for generating Let's Encrypt certificates.
 }
 ```
 
+## License
+
+MIT / BSD
+
 # Release Management
 ### CircleCi PR auto-release job
-
-<div align="left">
-  <img src="./%40doc/figures/circleci-logo.png" alt="circleci" width="130"/>
-</div>
 
 - [**pipeline-job**](https://app.circleci.com/pipelines/github/binbashar/ansible-role-certbot) (**NOTE:** Will only run after merged PR)
 - [**releases**](https://github.com/binbashar/ansible-role-certbot/releases) 
