@@ -34,6 +34,6 @@ init-makefiles: ## initialize makefiles
 #
 #include ${MAKEFILES_DIR}/circleci/circleci.mk
 #include ${MAKEFILES_DIR}/release-mgmt/release.mk
-#include ${MAKEFILES_DIR}/ansible/ansible-roles.mkz
+#include ${MAKEFILES_DIR}/ansible/ansible-roles.mk
 
 
