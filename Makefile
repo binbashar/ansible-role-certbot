@@ -3,8 +3,8 @@ SHELL         := /bin/bash
 MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
 
-ANSIBLE_GALAXY_ROLE_NAME := binbash_inc.ansible_role_cerbot
-ANSIBLE_REPO_ROLE_NAME   := ansible-role-cerbot
+ANSIBLE_GALAXY_ROLE_NAME := binbash_inc.ansible_role_certbot
+ANSIBLE_REPO_ROLE_NAME   := ansible-role-certbot
 
 define OS_VER_LIST
 "ubuntu1804" \
@@ -35,5 +35,6 @@ init-makefiles: ## initialize makefiles
 #include ${MAKEFILES_DIR}/circleci/circleci.mk
 #include ${MAKEFILES_DIR}/release-mgmt/release.mk
 #include ${MAKEFILES_DIR}/ansible/ansible-roles.mk
+
 
 
