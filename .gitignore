@@ -81,7 +81,8 @@ Thumbs.db
 *.pgpass
 *.vagrant
 
-# Project specific files #
-#################################
+# Project files #
+####################
+molecule/default/roles
 /@bin
 
