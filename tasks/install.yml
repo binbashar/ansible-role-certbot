@@ -7,15 +7,15 @@
 - name: Install base packages.
   package:
     name:
-    - software-properties-common
-    update_cache: yes
-    force_apt_get: yes
+      - software-properties-common
+    update_cache: true
+    force_apt_get: true
     cache_valid_time: 3600
     state: latest
 
 - name: Add Universe repository.
   command: add-apt-repository universe
-  become: yes
+  become: true
 
 - name: Add Certbot repository.
   apt_repository:
@@ -37,10 +37,10 @@
 - name: Install Certbot.
   package:
     name:
-    - certbot
-    # - python-certbot-nginx
-    - python3-certbot-dns-route53
-    update_cache: yes
-    force_apt_get: yes
+      - certbot
+      # - python-certbot-nginx
+      - python3-certbot-dns-route53
+    update_cache: true
+    force_apt_get: true
     cache_valid_time: 3600
     state: latest

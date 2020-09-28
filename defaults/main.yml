@@ -1,3 +1,4 @@
+---
 # Certbot certificates domains and emails
 certbot_certs: []
 # - domain: example1.com

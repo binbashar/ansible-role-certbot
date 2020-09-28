@@ -26,15 +26,9 @@ init-makefiles: ## initialize makefiles
 	mkdir -p ${MAKEFILES_DIR}
 	git clone https://github.com/binbashar/le-dev-makefiles.git ${MAKEFILES_DIR}
 	echo "" >> ${MAKEFILE_PATH}
-	sed -i '/^#include.*/s/^#//' ${MAKEFILE_PATH}
 
-#
-## IMPORTANT: Automatically managed
-## Must NOT UNCOMMENT the #include lines below
-#
-#include ${MAKEFILES_DIR}/circleci/circleci.mk
-#include ${MAKEFILES_DIR}/release-mgmt/release.mk
-#include ${MAKEFILES_DIR}/ansible/ansible-roles.mk
-
+-include ${MAKEFILES_DIR}/circleci/circleci.mk
+-include ${MAKEFILES_DIR}/release-mgmt/release.mk
+-include ${MAKEFILES_DIR}/ansible/ansible-roles.mk
 
 
