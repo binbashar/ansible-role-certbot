@@ -8,10 +8,7 @@ ANSIBLE_REPO_ROLE_NAME   := ansible-role-certbot
 
 define OS_VER_LIST
 "ubuntu1804" \
-"ubuntu1604" \
-"debian10" \
-"debian9" \
-"debian8"
+"ubuntu1604"
 endef
 
 help:
