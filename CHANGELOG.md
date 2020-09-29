@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.12"></a>
+## [v0.0.12] - 2020-09-29
+
+- BBL-381 | moving unnesessary line in makefile
+- BBL-381 | setting molecule os versions
+- BBL-381 | molecule tests updated
+
+
 <a name="v0.0.11"></a>
 ## [v0.0.11] - 2020-09-24
 
@@ -79,7 +87,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.11...HEAD
+[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...HEAD
+[v0.0.12]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.11...v0.0.12
 [v0.0.11]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.10...v0.0.11
 [v0.0.10]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.8...v0.0.9
