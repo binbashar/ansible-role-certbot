@@ -1,7 +1,11 @@
 ---
-- name: Converge
+- name: certbot_playbook
   hosts: all
   become: true
+
+  vars:
+    ansible_python_interpreter: '/usr/bin/python3'
+    when: ansible_os_family == "Debian"
 
   pre_tasks:
     - name: Update apt cache.
