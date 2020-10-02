@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.13"></a>
+## [v0.0.13] - 2020-10-02
+
+- BBL-381 | circleci sumologic integration + readme.md update
+
+
 <a name="v0.0.12"></a>
 ## [v0.0.12] - 2020-09-29
 
@@ -87,7 +93,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...HEAD
+[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.13...HEAD
+[v0.0.13]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.11...v0.0.12
 [v0.0.11]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.10...v0.0.11
 [v0.0.10]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.9...v0.0.10
