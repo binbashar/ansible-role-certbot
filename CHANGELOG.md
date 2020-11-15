@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.14"></a>
+## [v0.0.14] - 2020-11-15
+
+- BBL-440 | improving Makefile init-makefiles w/ fixed version
+
+
 <a name="v0.0.13"></a>
 ## [v0.0.13] - 2020-10-02
 
@@ -93,7 +99,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.13...HEAD
+[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.14...HEAD
+[v0.0.14]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.11...v0.0.12
 [v0.0.11]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.10...v0.0.11
