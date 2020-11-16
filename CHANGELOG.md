@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.15"></a>
+## [v0.0.15] - 2020-11-16
+
+- BBL-444 | slack notif + makefiles-lib pointed to latest ver
+
+
 <a name="v0.0.14"></a>
 ## [v0.0.14] - 2020-11-15
 
@@ -99,7 +105,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.14...HEAD
+[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.15...HEAD
+[v0.0.15]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.14...v0.0.15
 [v0.0.14]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.11...v0.0.12
