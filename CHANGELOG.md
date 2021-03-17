@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.16"></a>
+## [v0.0.16] - 2021-03-17
+
+- Remove cron installed by default by certbot and use a custom one ([#6](https://github.com/binbashar/ansible-role-certbot/issues/6))
+
+
 <a name="v0.0.15"></a>
 ## [v0.0.15] - 2020-11-16
 
@@ -105,7 +111,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.15...HEAD
+[Unreleased]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.16...HEAD
+[v0.0.16]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.15...v0.0.16
 [v0.0.15]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.14...v0.0.15
 [v0.0.14]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/ansible-role-certbot/compare/v0.0.12...v0.0.13
