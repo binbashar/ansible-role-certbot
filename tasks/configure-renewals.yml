@@ -14,3 +14,16 @@
     mode: 0755
     owner: root
   when: certificate_dir.stat.exists
+
+- name: Remove default crontab file
+  file:
+    path: /etc/cron.d/certbot
+    state: absent
+
+- name: Add cron job for certbot renewal (if configured).
+  cron:
+    name: Certbot automatic renewal.
+    job: "certbot renew {{ certbot_auto_renew_options }}"
+    minute: "{{ certbot_auto_renew_minute }}"
+    hour: "{{ certbot_auto_renew_hour }}"
+    user: "{{ certbot_auto_renew_user }}"
