@@ -8,14 +8,14 @@
   package:
     name:
       - software-properties-common
-    update_cache: true
-    force_apt_get: true
+    update_cache: yes
+    force_apt_get: yes
     cache_valid_time: 3600
     state: latest
 
 - name: Add Universe repository.
   command: add-apt-repository universe
-  become: true
+  become: yes
 
 - name: Add Certbot repository.
   apt_repository:
@@ -40,7 +40,7 @@
       - certbot
       # - python-certbot-nginx
       - python3-certbot-dns-route53
-    update_cache: true
-    force_apt_get: true
+    update_cache: yes
+    force_apt_get: yes
     cache_valid_time: 3600
     state: latest

@@ -1,4 +1,3 @@
----
 # Certbot certificates domains and emails
 certbot_certs: []
 # - domain: example1.com
@@ -14,3 +13,9 @@ certbot_logs_dir: "{{ certbot_base_dir }}"
 
 # Custom environment variables to set when running certbot
 certbot_environment_vars: {}
+
+# Certbot cron renewal
+certbot_auto_renew_options: "-q --config-dir {{ certbot_config_dir }}"
+certbot_auto_renew_user: "{{ ansible_user | default(lookup('env', 'USER')) }}"
+certbot_auto_renew_hour: "12"
+certbot_auto_renew_minute: "0"
