@@ -1,5 +1,9 @@
 ---
 - import_tasks: install.yml
+  when: not ansible_distribution == 'Ubuntu' and not ansible_distribution_release == 'focal'
+
+- import_tasks: install-ubuntu-20.04.yml
+  when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'focal'
 
 - include_tasks: create-cert.yml
   with_items: "{{ certbot_certs }}"

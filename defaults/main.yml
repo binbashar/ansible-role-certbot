@@ -19,3 +19,7 @@ certbot_auto_renew_options: "-q --config-dir {{ certbot_config_dir }}"
 certbot_auto_renew_user: "{{ ansible_user | default(lookup('env', 'USER')) }}"
 certbot_auto_renew_hour: "12"
 certbot_auto_renew_minute: "0"
+certbot_auto_renew_vars: "{{ certbot_environment_vars.keys()|
+                      zip(certbot_environment_vars.values())|
+                      map('join', '=')|
+                      join(' ') }}"
